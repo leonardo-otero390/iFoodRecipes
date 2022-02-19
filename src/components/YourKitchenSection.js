@@ -1,7 +1,7 @@
 import { AiOutlineHeart as Heart } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
 import styled from "styled-components";
-import Receipt from "../assets/Receipt.svg";
+import Receipt from "../assets/icons/Receipt.svg";
 
 export default function YourKitchenSection() {
   return (

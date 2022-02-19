@@ -1,7 +1,7 @@
 import { IoIosArrowForward as Arrow } from "react-icons/io";
 import { IconContext } from "react-icons/lib";
 import styled from "styled-components";
-import Toast from "../assets/Toast.svg";
+import Toast from "../assets/icons/Toast.svg";
 export default function SearchRecipesButton() {
   return (
     <Container>

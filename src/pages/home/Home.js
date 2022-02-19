@@ -1,6 +1,7 @@
 import Input from "../../components/Input";
 import SearchRecipesButton from "../../components/SearchRecipesButton";
 import TopBar from "../../components/TopBar";
+import TopRecipes from "../../components/TopRecipes";
 import YourKitchenSection from "../../components/YourKitchenSection";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Input />
       <SearchRecipesButton />
       <YourKitchenSection />
+      <TopRecipes />
     </>
   );
 }
