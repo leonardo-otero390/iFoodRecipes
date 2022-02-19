@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import RecipeThumb from "./RecipeThumb";
-import recipes from "../services/recipesMock";
+import recipes from "../../../services/recipesMock";
 
 export default function TopRecipes() {
   return (

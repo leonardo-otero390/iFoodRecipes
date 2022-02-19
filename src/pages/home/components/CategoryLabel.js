@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import categories from "../services/categoriesMock";
+import categories from "../../../services/categoriesMock";
 
 export default function CategoryLabel({ id }) {
   const { name, icon } = categories.find((category) => category.id === id);
@@ -22,9 +22,7 @@ const Container = styled.button`
   background: #f6f0eb;
   border: 1px dashed #f4e8da;
   border-radius: 46px;
-  position: absolute;
-  top: 8px;
-  left: 8px;
+ 
 `;
 const Icon = styled.img`
   width: 16px;

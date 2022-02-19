@@ -5,15 +5,17 @@ export default function RecipeThumb({ recipe }) {
   const { name, description, image, categoryId } = recipe;
   return (
     <Container>
-      <CategoryLabel id={categoryId} />
+      <LabelContainer>
+        <CategoryLabel id={categoryId} />
+      </LabelContainer>
       <Button>
         <img src={image} alt={name} />
-        <div>
+        <RecipeInfos>
           <h1>
             <strong>{name}</strong>
           </h1>
           <h3>{description}</h3>
-        </div>
+        </RecipeInfos>
       </Button>
     </Container>
   );
@@ -45,11 +47,16 @@ const Button = styled.button`
     height: 129px;
     object-fit: cover;
   }
-  div {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    align-items: start;
-    justify-content: center;
-  }
+`;
+const LabelContainer = styled.div`
+  position: absolute;
+  top: 8px;
+  left: 8px;
+`;
+const RecipeInfos = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  align-items: start;
+  justify-content: center;
 `;

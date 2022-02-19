@@ -1,8 +1,9 @@
-import Input from "../../components/Input";
-import SearchRecipesButton from "../../components/SearchRecipesButton";
-import TopBar from "../../components/TopBar";
-import TopRecipes from "../../components/TopRecipes";
-import YourKitchenSection from "../../components/YourKitchenSection";
+import CategorySection from "./components/CategorySection";
+import Input from "./components/Input";
+import SearchRecipesButton from "./components/SearchRecipesButton";
+import TopBar from "./components/TopBar";
+import TopRecipes from "./components/TopRecipes";
+import YourKitchenSection from "./components/YourKitchenSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SearchRecipesButton />
       <YourKitchenSection />
       <TopRecipes />
+      <CategorySection />
     </>
   );
 }
