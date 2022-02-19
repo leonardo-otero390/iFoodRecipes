@@ -1,10 +1,14 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
 import GlobalStyle from "./styles/global";
 
 export default function App() {
   return (
-    <>
+    <Router>
       <GlobalStyle />
-      <h1> Bem vindo(a) ao ifood recipes</h1>
-    </>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }

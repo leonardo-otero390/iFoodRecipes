@@ -53,11 +53,18 @@ a {
 }
 *{
 	box-sizing: border-box;
+	
 }
-html, body, #root {
+html, body {
   height: 100%;
+}
+.root{
+	width:80%;
+	max-width:272px;
+	margin:16px auto;
 }
 body {
     background: #FCFCFC;
+	font-family: 'poppins', sans-serif;
   }
 `;
