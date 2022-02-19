@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import RecipeThumb from "./RecipeThumb";
-import macarronada from "../assets/images/macarronada.png";
+import recipes from "../services/recipesMock";
 
 export default function TopRecipes() {
   return (
@@ -9,21 +9,9 @@ export default function TopRecipes() {
         <strong>Top 3 receitas</strong>
       </h1>
       <ul>
-        <RecipeThumb
-          name={"Macarronada"}
-          description={"30 min | 2 pessoas"}
-          image={macarronada}
-        />
-        <RecipeThumb
-          name={"Macarronada"}
-          description={"30 min | 2 pessoas"}
-          image={macarronada}
-        />
-        <RecipeThumb
-          name={"Macarronada"}
-          description={"30 min | 2 pessoas"}
-          image={macarronada}
-        />
+        {recipes.map((recipe, index) => (
+          <RecipeThumb key={index} recipe={recipe} />
+        ))}
       </ul>
     </Container>
   );

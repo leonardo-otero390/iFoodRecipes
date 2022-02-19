@@ -1,11 +1,13 @@
-import Veggie from "../assets/icons/Veggie.svg";
 import styled from "styled-components";
+import categories from "../services/categoriesMock";
 
-export default function CategoryLabel() {
+export default function CategoryLabel({ id }) {
+  const { name, icon } = categories.find((category) => category.id === id);
+
   return (
     <Container>
-      <Icon src={Veggie} alt="veggie" />
-      Vegetariano
+      <Icon src={icon} alt="name" />
+      {name}
     </Container>
   );
 }

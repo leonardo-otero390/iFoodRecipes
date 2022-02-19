@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import CategoryLabel from "./CategoryLabel";
 
-export default function RecipeThumb({ name, description, image }) {
+export default function RecipeThumb({ recipe }) {
+  const { name, description, image, categoryId } = recipe;
   return (
     <Container>
-      <CategoryLabel />
+      <CategoryLabel id={categoryId} />
       <Button>
         <img src={image} alt={name} />
         <div>
