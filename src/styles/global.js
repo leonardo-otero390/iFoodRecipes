@@ -60,7 +60,7 @@ html, body {
 }
 .root{
 	width:80%;
-	max-width:272px;
+	max-width:365px;
 	margin:16px auto;
 }
 body {
