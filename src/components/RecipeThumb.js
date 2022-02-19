@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import CategoryLabel from "./CategoryLabel";
 
 export default function RecipeThumb({ name, description, image }) {
   return (
     <Container>
-      <button>
+      <CategoryLabel />
+      <Button>
         <img src={image} alt={name} />
         <div>
           <h1>
@@ -11,7 +13,7 @@ export default function RecipeThumb({ name, description, image }) {
           </h1>
           <h3>{description}</h3>
         </div>
-      </button>
+      </Button>
     </Container>
   );
 }
@@ -21,12 +23,14 @@ const Container = styled.li`
   border: 1px solid #edecec;
   box-shadow: 0px 4px 24px rgba(219, 217, 217, 0.4);
   border-radius: 6px;
-  button {
-    width: 176px;
-    padding: 0;
-    border: none;
-    background: none;
-  }
+  position: relative;
+`;
+const Button = styled.button`
+  width: 176px;
+  padding: 0;
+  border: none;
+  background: none;
+
   h1 {
     font-size: 14px;
   }
