@@ -22,6 +22,7 @@ const Container = styled.div`
   border-radius:4px;
   height: 36px;
   padding: 8px;
+  margin-bottom:8px;
   div{
       width:24px;
       display: flex;
