@@ -6,6 +6,8 @@ Status do projeto: Finalizado (com planejamento de melhorias futuras)
 
 ![Logo](https://boundless-cheshire-26f.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb28e5bfe-bc5a-484d-bb60-338d4f3ef00b%2FHack_Ifood.png?table=block&id=cfaa0ac7-1c67-4f88-93ab-7a2531b52832&spaceId=7774956f-485a-49d8-9030-f6b121fbd386&width=1900&userId=&cache=v2)
 
+![demo](https://user-images.githubusercontent.com/85591297/154848768-20680b8d-0765-46f5-bbbe-4371a6bf2046.gif)
+
 ## Sobre o projeto
 
 O nosso projeto tem como objetivo principal apoiar pessoas que possuam alguma restrição alimentar a encontrar alimentos que atendam às suas necessidades. Hoje, o iFood já conecta clientes, mercados, restaurantes e entregadores. Com o nosso projeto ele pode ir muito além, conectando pessoas e histórias através de receitas de família. Afinal, a culinária resgata diversas culturas, memórias, laços afetivos.
