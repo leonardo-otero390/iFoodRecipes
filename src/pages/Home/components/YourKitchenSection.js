@@ -1,16 +1,18 @@
 import { AiOutlineHeart as Heart } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Receipt from "../../../assets/icons/Receipt.svg";
 
 export default function YourKitchenSection() {
+  const navigate = useNavigate();
   return (
     <Container>
       <h1>
         <strong>Sua cozinha</strong>
       </h1>
       <div>
-        <button>
+        <button onClick={() => navigate("/minhas-receitas")}>
           <img src={Receipt} alt="icone-receita" />
           <span>Minhas receitas</span>
         </button>

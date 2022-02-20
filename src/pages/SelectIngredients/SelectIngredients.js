@@ -5,7 +5,7 @@ import ingredients from "../../services/ingredientsMock";
 import Footer from "./components/Footer";
 import IngredientsList from "../../components/Lists/IngrendientsList";
 import milk from "../../assets/icons/milk.svg";
-import OutlinedButton from "../../components/OutlinedButton";
+import OutlinedButton from "../../components/Buttons/OutlinedButton";
 
 export default function SelectIngredients() {
   return (
