@@ -1,11 +1,14 @@
 import { IoIosArrowBack as ArrowBack } from "react-icons/io";
 import { IconContext } from "react-icons/lib";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export default function TopBar({ content }) {
+  const navigate = useNavigate();
+
   return (
     <Header>
-      <div>
+      <div onClick={() => navigate(-1)}>
         <IconContext.Provider value={{ color: "#E9202E" }}>
           <ArrowBack />
         </IconContext.Provider>
@@ -20,7 +23,7 @@ const Header = styled.header`
   gap: 72px;
   width: 100%;
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   div {
     position: absolute;
     top: 0;
@@ -36,5 +39,4 @@ const Header = styled.header`
     width: 100px;
     white-space: nowrap;
   }
-  margin-bottom: 16px;
 `;

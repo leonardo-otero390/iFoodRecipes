@@ -1,10 +1,13 @@
 import { IoIosArrowForward as Arrow } from "react-icons/io";
 import { IconContext } from "react-icons/lib";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Toast from "../../../assets/icons/Toast.svg";
 export default function SearchRecipesButton() {
+  const navigate = useNavigate();
+
   return (
-    <Container>
+    <Container onClick={() => navigate("/ingredientes")}>
       <div>
         <img src={Toast} alt="torradinha" />
       </div>
@@ -25,7 +28,7 @@ const Container = styled.button`
   width: 100%;
   border: none;
   span {
-      padding: 0 16px;
+    padding: 0 16px;
     margin: 8px;
     text-align: left;
   }
