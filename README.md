@@ -101,9 +101,7 @@ npm run build
 
 ## Entregáveis
 
-### Pitch
-
-<iframe width="747" height="420" src="https://www.youtube.com/embed/8vrEETVBIeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### [Pitch](https://www.youtube.com/embed/8vrEETVBIeE)
 
 ## Profissionais responsáveis pelo projeto:
 
