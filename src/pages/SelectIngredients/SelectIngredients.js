@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import TopBar from "../../components/TopBar";
-import { CardsList } from "../../styles/style";
+import { CardsList, Line } from "../../styles/style";
 import ingredients from "../../services/ingredientsMock";
 import IngredientCard from "./components/IngredientCard";
 import AddIngredient from "./components/AddIngredient";
@@ -38,9 +38,4 @@ const Description = styled.p`
   letter-spacing: 0.05em;
   color: #3f3e3e;
   margin-top: 8px;
-`;
-
-const Line = styled.hr`
-  color: #edecec;
-  margin: 16px 0;
 `;

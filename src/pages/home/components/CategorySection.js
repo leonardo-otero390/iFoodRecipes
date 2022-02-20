@@ -1,6 +1,5 @@
-import CategoryLabel from "./CategoryLabel";
-import categories from "../../../services/categoriesMock";
 import styled from "styled-components";
+import CategoriesList from "../../../components/CategoriesList"
 
 export default function CategorySection() {
   return (
@@ -11,31 +10,13 @@ export default function CategorySection() {
         </h1>
         <h2>Ver todas</h2>
       </Header>
-      <ul>
-        {categories.map((category, index) => (
-          <CategoryLabel key={index} id={category.id} />
-        ))}
-      </ul>
+      <CategoriesList />
     </Container>
   );
 }
 
 const Container = styled.section`
   margin: 16px 0;
-  ul {
-    display: flex;
-    white-space: nowrap;
-    gap: 8px;
-    overflow: hidden;
-    overflow-x: scroll;
-    @media (max-width: 614px) {
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  }
 `;
 const Header = styled.header`
   display: flex;

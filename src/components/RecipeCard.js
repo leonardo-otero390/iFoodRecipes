@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
-export default function RecipeCard({recipe}) {
-    const { name, description, image } = recipe;
+export default function RecipeCard({ recipe }) {
+  const { name, description, image } = recipe;
   return (
-    <Container>
-      <img src={image} alt={name} />
-      <div>
-        <h1>{name}</h1>
-        <h2>{description}</h2>
-      </div>
-    </Container>
+    <li>
+      <Container>
+        <img src={image} alt={name} />
+        <div>
+          <h1>{name}</h1>
+          <h2>{description}</h2>
+        </div>
+      </Container>
+    </li>
   );
 }
 

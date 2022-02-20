@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CategoryLabel from "./CategoryLabel";
+import CategoryLabel from "../../../components/CategoryLabel";
 
 export default function RecipeThumb({ recipe }) {
   const { name, description, image, categoryId } = recipe;

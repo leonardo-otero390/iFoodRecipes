@@ -1,12 +1,11 @@
 import CategorySection from "./components/CategorySection";
-import Input from "./components/Input";
-import RecipeCard from "./components/RecipeCard";
 import SearchRecipesButton from "./components/SearchRecipesButton";
 import TopBar from "../../components/TopBar";
 import TopRecipes from "./components/TopRecipes";
 import YourKitchenSection from "./components/YourKitchenSection";
 import recipes from "../../services/recipesMock";
-import { CardsList } from "../../styles/style";
+import Input from "../../components/Input";
+import RecipesList from "../../components/RecipesList";
 
 export default function Home() {
   return (
@@ -18,13 +17,7 @@ export default function Home() {
       <TopRecipes />
       <CategorySection />
       <section>
-        <CardsList>
-          {recipes.map((recipe, index) => (
-            <li>
-              <RecipeCard key={index} recipe={recipe} />
-            </li>
-          ))}
-        </CardsList>
+       <RecipesList recipes={recipes} />
       </section>
     </>
   );

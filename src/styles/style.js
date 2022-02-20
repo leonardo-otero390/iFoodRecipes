@@ -5,3 +5,8 @@ export const CardsList = styled.ul`
     flex-direction: column;
     gap: 8px;
 `;
+
+export const Line = styled.hr`
+  color: #edecec;
+  margin: 16px 0;
+`;
