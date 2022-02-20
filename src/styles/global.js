@@ -66,5 +66,6 @@ html, body {
 body {
     background: #FCFCFC;
 	font-family: 'poppins', sans-serif;
+	font-size:14px;
   }
 `;
