@@ -9,7 +9,7 @@ export default function TopBar({ content }) {
   return (
     <Header>
       <div onClick={() => navigate(-1)}>
-        <IconContext.Provider value={{ color: "#E9202E" }}>
+        <IconContext.Provider value={{ color: "#E9202E", size: "16px" }}>
           <ArrowBack />
         </IconContext.Provider>
       </div>
@@ -20,15 +20,14 @@ export default function TopBar({ content }) {
 
 const Header = styled.header`
   display: flex;
+  align-items: center;
   gap: 72px;
   width: 100%;
   position: relative;
+  z-index: 1;
   margin-bottom: 24px;
-  div {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  height: 32px;
+
   h1 {
     font-size: 14px;
     position: absolute;
