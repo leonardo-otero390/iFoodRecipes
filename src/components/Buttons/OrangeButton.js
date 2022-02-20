@@ -1,17 +1,14 @@
 import { IoIosArrowForward as Arrow } from "react-icons/io";
 import { IconContext } from "react-icons/lib";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import Toast from "../../../assets/icons/Toast.svg";
-export default function SearchRecipesButton() {
-  const navigate = useNavigate();
 
+export default function OrangeButton({ image, action, content }) {
   return (
-    <Container onClick={() => navigate("/ingredientes")}>
+    <Container onClick={action}>
       <div>
-        <img src={Toast} alt="torradinha" />
+        <img src={image} alt="icone" />
       </div>
-      <span>Buscar receitas com ingredientes disponiveis</span>
+      <span>{content}</span>
       <IconContext.Provider value={{ size: "32px" }}>
         <Arrow />
       </IconContext.Provider>
@@ -26,6 +23,7 @@ const Container = styled.button`
   justify-content: space-between;
   border-radius: 4px;
   width: 100%;
+  min-height: 50px;
   border: none;
   span {
     padding: 0 16px;
