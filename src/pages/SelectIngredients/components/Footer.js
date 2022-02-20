@@ -1,12 +1,14 @@
 import { IconContext } from "react-icons";
 import { IoIosSearch as Search } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <Container>
-      <button>
-      <IconContext.Provider value={{  size: "24px" }}>
+      <button onClick={() => navigate("/receitas")}>
+        <IconContext.Provider value={{ size: "24px" }}>
           <Search />
         </IconContext.Provider>
         Buscar Receitas

@@ -1,15 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-export default function RecipeCard({recipe}) {
-    const { name, description, image } = recipe;
+export default function RecipeCard({ recipe }) {
+  const { name, description, image, id } = recipe;
+  const navigate = useNavigate();
   return (
-    <Container>
-      <img src={image} alt={name} />
-      <div>
-        <h1>{name}</h1>
-        <h2>{description}</h2>
-      </div>
-    </Container>
+    <li>
+      <Container onClick={() => navigate("/receita/" + id)}>
+        <img src={image} alt={name} />
+        <div>
+          <h1>{name}</h1>
+          <h2>{description}</h2>
+        </div>
+      </Container>
+    </li>
   );
 }
 
@@ -24,9 +28,12 @@ const Container = styled.button`
   align-items: center;
   gap: 8px;
   text-align: left;
+  padding: 0;
   img {
     border-radius: 6px 0px 0px 6px;
+    width: 80px;
     height: 100%;
+    object-fit: cover;
   }
   div {
     display: flex;
