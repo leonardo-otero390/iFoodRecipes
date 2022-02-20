@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import milk from "../../../assets/icons/milk.svg";
 
-export default function AddIngredient() {
+export default function OutlinedButton({ content, icon }) {
   return (
     <Button>
-      <img src={milk} alt="garrafinha" />
-      Add ingrediente
+      <img src={icon} alt="garrafinha" />
+      {content}
     </Button>
   );
 }
 
 const Button = styled.button`
-margin: 16px 0;
+  margin: 16px 0;
   background: none;
   border: 1px solid #fcb663;
   box-sizing: border-box;

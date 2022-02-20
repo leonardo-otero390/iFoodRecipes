@@ -1,5 +1,5 @@
-import espaguete from "../assets/images/espaguete.png";
-import tomate from "../assets/images/tomate-cereja.png";
+import espaguete from "../assets/images/ingredients/espaguete.png";
+import tomate from "../assets/images/ingredients/tomate-cereja.png";
 
 const ingredients = [
   {

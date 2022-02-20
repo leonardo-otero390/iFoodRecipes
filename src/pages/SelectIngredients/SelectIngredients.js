@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import TopBar from "../../components/TopBar";
-import { CardsList, Line } from "../../styles/style";
+import { Line } from "../../styles/style";
 import ingredients from "../../services/ingredientsMock";
-import IngredientCard from "./components/IngredientCard";
-import AddIngredient from "./components/AddIngredient";
 import Footer from "./components/Footer";
+import IngredientsList from "../../components/IngrendientsList";
+import milk from "../../assets/icons/milk.svg";
+import OutlinedButton from "../../components/OutlinedButton";
 
 export default function SelectIngredients() {
   return (
@@ -18,14 +19,8 @@ export default function SelectIngredients() {
       </Description>
       <Line />
       <section>
-        <CardsList>
-          {ingredients.map((ingredient, index) => (
-            <li>
-              <IngredientCard key={index} ingredient={ingredient} />
-            </li>
-          ))}
-        </CardsList>
-        <AddIngredient />
+        <IngredientsList ingredients={ingredients} icon="cancel" />
+        <OutlinedButton content="Add ingredient" icon={milk} />
       </section>
       <Footer />
     </>
