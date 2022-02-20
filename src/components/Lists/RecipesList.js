@@ -1,5 +1,5 @@
-import { CardsList } from "../styles/style";
-import RecipeCard from "./RecipeCard";
+import { CardsList } from "../../styles/style";
+import RecipeCard from "../Cards/RecipeCard";
 
 export default function RecipesList({ recipes }) {
   return (

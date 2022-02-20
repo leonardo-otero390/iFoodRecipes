@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CategoriesList from "../../../components/CategoriesList"
+import CategoriesList from "../../../components/Lists/CategoriesList"
 
 export default function CategorySection() {
   return (

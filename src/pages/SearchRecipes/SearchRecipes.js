@@ -1,6 +1,6 @@
-import CategoriesList from "../../components/CategoriesList";
+import CategoriesList from "../../components/Lists/CategoriesList";
 import Input from "../../components/Input";
-import RecipesList from "../../components/RecipesList";
+import RecipesList from "../../components/Lists/RecipesList";
 import TopBar from "../../components/TopBar";
 import { Line } from "../../styles/style";
 import EditIngredientsButton from "./components/EditIngredientsButton";

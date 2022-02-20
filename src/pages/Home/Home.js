@@ -5,7 +5,7 @@ import TopRecipes from "./components/TopRecipes";
 import YourKitchenSection from "./components/YourKitchenSection";
 import recipes from "../../services/recipesMock";
 import Input from "../../components/Input";
-import RecipesList from "../../components/RecipesList";
+import RecipesList from "../../components/Lists/RecipesList";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <TopRecipes />
       <CategorySection />
       <section>
-       <RecipesList recipes={recipes} />
+        <RecipesList recipes={recipes} />
       </section>
     </>
   );
