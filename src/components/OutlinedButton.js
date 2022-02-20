@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export default function OutlinedButton({ content, icon }) {
+export default function OutlinedButton({ content, icon, action }) {
   return (
-    <Button>
+    <Button onClick={action}>
       <img src={icon} alt="garrafinha" />
       {content}
     </Button>

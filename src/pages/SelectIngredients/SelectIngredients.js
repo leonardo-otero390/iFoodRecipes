@@ -3,7 +3,7 @@ import TopBar from "../../components/TopBar";
 import { Line } from "../../styles/style";
 import ingredients from "../../services/ingredientsMock";
 import Footer from "./components/Footer";
-import IngredientsList from "../../components/IngrendientsList";
+import IngredientsList from "../../components/Lists/IngrendientsList";
 import milk from "../../assets/icons/milk.svg";
 import OutlinedButton from "../../components/OutlinedButton";
 

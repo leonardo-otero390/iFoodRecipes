@@ -1,5 +1,5 @@
-import CategoryLabel from "./CategoryLabel";
-import categories from "../services/categoriesMock";
+import CategoryLabel from "../CategoryLabel";
+import categories from "../../services/categoriesMock";
 import styled from "styled-components";
 
 export default function CategoriesList() {

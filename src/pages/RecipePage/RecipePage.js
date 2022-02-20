@@ -1,11 +1,11 @@
 import TopBar from "../../components/TopBar";
 import Banner from "./components/Banner";
 import recipes from "../../services/recipesMock";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import UserCard from "./components/UserCard";
 import styled from "styled-components";
 import ingredients from "../../services/ingredientsMock";
-import IngredientsList from "../../components/IngrendientsList";
+import IngredientsList from "../../components/Lists/IngrendientsList";
 import OutlinedButton from "../../components/OutlinedButton";
 import receipt from "../../assets/icons/receipt-add.svg";
 
@@ -14,6 +14,7 @@ export default function RecipePage() {
   const recipe = recipes.find((recipe) => {
     return recipe.id === Number(id);
   });
+  const navigate = useNavigate();
   return (
     <>
       <TopBar content="RECEITAS IFOOD" />
@@ -26,7 +27,11 @@ export default function RecipePage() {
         <h2>08</h2>
       </Counter>
       <IngredientsList ingredients={ingredients} icon="eye" />
-      <OutlinedButton content="Comprar esses itens" icon={receipt} />
+      <OutlinedButton
+        action={() => navigate("/comprar")}
+        content="Comprar esses itens"
+        icon={receipt}
+      />
     </>
   );
 }

@@ -1,5 +1,5 @@
-import { CardsList } from "../styles/style";
-import IngredientCard from "./IngredientCard";
+import { CardsList } from "../../styles/style";
+import IngredientCard from "../Cards/IngredientCard";
 
 export default function IngredientsList({ ingredients, icon }) {
   return (
