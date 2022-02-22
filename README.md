@@ -1,4 +1,4 @@
-# Hackathon iFood - Time 27
+# Hackathon iFood - Time 27 classificado em 1º lugar :heart_eyes:
 
 ## [iFood Recipes](https://ifood-recipes.vercel.app/)
 
