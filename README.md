@@ -1,35 +1,37 @@
-# Hackathon iFood - Time 27 classificado em 1º lugar :heart_eyes:
+# iFood Hackathon - Team 27 ranked 1st :heart_eyes:
+
+### [Versão em português](./README-pt.md)
+
+#### All texts in the app are in portuguese due this was a brazilian hackathon
 
 ## [iFood Recipes](https://ifood-recipes.vercel.app/)
 
-Status do projeto: Finalizado (com planejamento de melhorias futuras)
+Project Status: Completed (with future improvements planned)
 
 ![Logo](https://user-images.githubusercontent.com/85591297/157079408-8e621c6e-4e43-4414-9ed4-bbb4e5433aa5.png)
 
 ![demo](https://user-images.githubusercontent.com/85591297/154848768-20680b8d-0765-46f5-bbbe-4371a6bf2046.gif)
 
-## Sobre o projeto
+## About
 
-O nosso projeto tem como objetivo principal apoiar pessoas que possuam alguma restrição alimentar a encontrar alimentos que atendam às suas necessidades. Hoje, o iFood já conecta clientes, mercados, restaurantes e entregadores. Com o nosso projeto ele pode ir muito além, conectando pessoas e histórias através de receitas de família. Afinal, a culinária resgata diversas culturas, memórias, laços afetivos.
+Our project's main objective is to support people who have some food restriction to find food that meets their needs. Today, [iFood](https://www.ifood.com.br/) already connects customers, markets, restaurants and delivery people. With our project he can go much further, connecting people and stories through family recipes. After all, cuisine rescues different cultures, memories, affective bonds.
 
-A nossa proposta envolve criar uma comunidade que terá interações constantes, seja na publicação de uma receita nova, compartilhar sua receita favorita, etc. O usuário da plataforma também conseguirá consultar o rótulo dos itens, trazendo maior transparência e confiança na sua compra, pois poderá identificar se aquele alimento tem algum componente restritivo da sua alimentação.
+Our proposal involves creating a community that will have constant interactions, whether publishing a new recipe, sharing your favorite recipe, etc. The platform user will also be able to consult the label of the items, bringing greater transparency and confidence in their purchase, as they will be able to identify if that food has any restrictive component of their diet.
 
-## Funcionalidades (somente visual)
+## Features (visual only)
 
-- Tela home
-- Selecionar ingredientes
-- Encontrar receitas com ingredientes selecionados
-- Listar mercados com os ingredientes que faltam
-- Comprar ingredientes
+- Home page
+- Select ingredients
+- Find recipes by the selected ingredients
+- List markets with the missing ingredients
+- Buy ingredients
 
-#### Em desenvolvimento
+#### Next features
 
-- Criar receitas
-- Editar receitas
+- Create recipes
+- Edit recipes
 
-## Tecnologias
-
-As ferramentas e frameworks seguintes foram usados no desenvolvimento do projeto:
+## Technologies
 
 <a title="React" href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer"> 
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="reactjs" width="40" height="40"/> 
@@ -44,7 +46,7 @@ As ferramentas e frameworks seguintes foram usados no desenvolvimento do projeto
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
 </a>
 
-## Requisitos
+## Requirements
 
 ### [npm](https://www.npmjs.com/)
 
@@ -52,18 +54,18 @@ As ferramentas e frameworks seguintes foram usados no desenvolvimento do projeto
     <summary>install npm</summary>
 
 ```bash
-## Rode esse comando
+## Run
 wget -qO- <https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh> | bash
 
-## Ou esse
+## Or
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
-# Feche e abra o terminal
+# Close and open terminal
 nvm install --lts
 nvm use --lts
-# Verifique a versão do node
+# Verify node version
 node --version # Must show v14.16.1
-# Verifique a versão do npm
+# Verify npm version
 npm -v
 ```
 
@@ -72,7 +74,7 @@ npm -v
 ### [React](https://pt-br.reactjs.org/)
 
 <details>
-    <summary>install react</summary>
+    <summary>Install react</summary>
 
 ```bash
 npm i -g create-react-app
@@ -82,8 +84,8 @@ npm i -g create-react-app
 
 ## Como rodar
 
-1. Clone esse repositório
-2. Instale as dependências
+1. Clone this repo
+2. Install dependencies
 
 ```bash
 npm i
@@ -95,17 +97,17 @@ npm i
 npm start
 ```
 
-6. Opcionalmente você pode fazer o build de produção
+6. You can optionally build the project running
 
 ```bash
 npm run build
 ```
 
-## Entregáveis
+## Deliverables
 
-### [Pitch](https://www.youtube.com/embed/8vrEETVBIeE)
+### [Pitch](https://www.youtube.com/embed/8vrEETVBIeE) (in portuguese)
 
-## Profissionais responsáveis pelo projeto:
+## Professionals responsible for the project:
 
 - Blenda Figueiredo - **Product Owner**
 
@@ -113,7 +115,7 @@ npm run build
 <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
 </a>
 
-- Brunna Brito - **Negócios**
+- Brunna Brito - **Business**
 
 <a href="https://github.com/brunnabrito" target="_blank">
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"> 
@@ -121,7 +123,7 @@ npm run build
 <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
 </a>
 
-- Gabriella Feliciano - **Agilista**
+- Gabriella Feliciano - **Agile master**
 
 - Leonardo Bittencourt - **Fullstack Developer**
 
