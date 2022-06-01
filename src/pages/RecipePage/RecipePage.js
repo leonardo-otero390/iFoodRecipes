@@ -6,7 +6,7 @@ import UserCard from "./components/UserCard";
 import styled from "styled-components";
 import ingredients from "../../services/ingredientsMock";
 import IngredientsList from "../../components/Lists/IngrendientsList";
-import OutlinedButton from "../../components/OutlinedButton";
+import OutlinedButton from "../../components/Buttons/OutlinedButton";
 import receipt from "../../assets/icons/receipt-add.svg";
 
 export default function RecipePage() {
